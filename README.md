@@ -25,11 +25,11 @@ g.	- allow SSH connection to user 'dev' using your SSH key
 
 3.	Scripting
  
-Write a python script for taking AWS EBS snapshots on EC2 instance external disk (see the task #1)
-The script will accept the following command-line arguments:
- - Snapshot name  
- - EBS by volume id
- - Number of snapshot to archive (automatically deletes the old ones)
+  Write a python script for taking AWS EBS snapshots on EC2 instance external disk (see the task #1)
+  The script will accept the following command-line arguments:
+    - Snapshot name  
+    - EBS by volume id
+    - Number of snapshot to archive (automatically deletes the old ones)
 
 4.	Kubernetes
 - Install Kubernetes minimal installation on some of the nodes from task #1
