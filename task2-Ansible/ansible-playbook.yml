@@ -1,0 +1,52 @@
+---
+ - name: ansible-playbook
+   hosts: all
+   remote_user: centos
+   become: true
+   tasks:
+     - name: Import Google Chrome signing key
+       rpm_key:
+           key: https://dl.google.com/linux/linux_signing_key.pub
+           state: present 
+     
+     - name: Add repository into repo.d list
+       yum_repository:
+           name: google-chrome
+           description: google-chrome repository
+           baseurl: http://dl.google.com/linux/chrome/rpm/stable/x86_64
+           enabled: true
+           gpgcheck: true
+           gpgkey: https://dl.google.com/linux/linux_signing_key.pub
+
+
+     - name: Install Google Chrome, bzip2 and perl
+       yum: 
+           name: 
+             - google-chrome-stable
+             - bzip2
+             - perl
+           state: present
+           
+     - name: run google-chrome from shell
+       command: google-chrome
+       async: 45
+       poll: 0
+
+     - name: Downloaded and extract tar.gz file from http://www.sbeams.org  
+       ansible.builtin.unarchive:
+           src: http://www.sbeams.org/sample_data/Microarray/External_test_data.tar.gz
+           dest: /var/tmp
+           remote_src: yes
+           
+     - name: Replace a localhost entry with our own
+       ansible.builtin.lineinfile:
+           path: /etc/hosts   
+           backup: yes
+           owner: root
+           group: root
+           mode: '0644'
+           line: "{{ item }}"
+       with_items:
+            - '1.2.3.4 host1'
+            - '3.4.2.1 host2'
+            - '5.6.3.2 host3'
