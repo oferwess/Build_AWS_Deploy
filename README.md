@@ -24,7 +24,6 @@ g.	- allow SSH connection to user 'dev' using your SSH key
     5.6.3.2 host3
 
 3.	Scripting
- 
   Write a python script for taking AWS EBS snapshots on EC2 instance external disk (see the task #1)
   The script will accept the following command-line arguments:
     - Snapshot name  
