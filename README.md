@@ -1,4 +1,4 @@
-# Voyager_Labs_Task
+# Voyager Labs Task
 
 1.	Terraform
 Create terraform deployment which does the following:
