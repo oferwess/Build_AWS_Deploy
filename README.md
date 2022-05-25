@@ -11,7 +11,7 @@ f.	- create user 'dev'
 g.	- allow SSH connection to user 'dev' using your SSH key
 
 2.	Ansible
-Write an Ansible playbook which does the following over 2 hosts from the previous task:
+  Write an Ansible playbook which does the following over 2 hosts from the previous task:
 •	installs 3 packages:
   	chrome
     bzip2
