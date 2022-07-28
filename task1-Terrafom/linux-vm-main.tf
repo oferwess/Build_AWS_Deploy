@@ -15,7 +15,7 @@ resource "aws_eip" "linux-eip" {
 
 # Create EC2 Instance
 resource "aws_instance" "linux-server" {
-  count						  = var.instance_count
+  count					          	  = var.instance_count
   ami                         = data.aws_ami.centos-8.id
   instance_type               = var.linux_instance_type
   subnet_id                   = aws_subnet.public-subnet.id
