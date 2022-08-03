@@ -9,8 +9,8 @@ vpc_cidr           = "10.11.0.0/16"
 public_subnet_cidr = "10.11.1.0/24"
 
 # AWS Settings
-aws_access_key = "AKIA42WJUBWK7TPNMBJH"
-aws_secret_key = "8M4Jh0qs3yhNbdDue5dbIC1GDkyo0duJPoZDBCGM"
+aws_access_key = "Type your AWS Access Key"
+aws_secret_key = "Type your AWS Secret Key"
 aws_region     = "eu-west-1"
 
 # Linux Virtual Machine
