@@ -1,4 +1,4 @@
-# Build_AWS_Deploy Labs Task
+# Build AWS Deploy Labs Task
 
 1.	Terraform:
     Create terraform deployment which does the following:
