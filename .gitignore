@@ -3,3 +3,4 @@ task3-Python/Modules/*
 task1-Terrafom/.terraform/*
 *.tfstate
 *.backup
+*.pem

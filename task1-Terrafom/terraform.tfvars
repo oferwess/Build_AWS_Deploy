@@ -11,24 +11,22 @@ public_subnet_cidr = "10.11.1.0/24"
 # AWS Settings 
 
 # Option 1:
-# You can use this section if you have export env varibles 
-# to your profile using ~/.bashrc file
-# You need to five these varibles:
+# Edit your bash profile using ~/.bashrc file
+# You need to have these varibles:
 # export TF_VAR_aws_access_key="YOUR_AWS_ACCESS_KEY"
 # export TF_VAR_aws_secret_key="YOUR_AWS_SECRET_KEY"
 # export TF_VAR_aws_region="YOUR_AWS_REGION"
 
 # Option 2:
-# Edit lines 24-26 with your AWS credentionals
+# Uncomment the lines below and insert you AWS credentaionlas and region staticly
 
-aws_access_key = var.aws_access_key
-aws_secret_key = var.aws_secret_key
-aws_region     = var.aws_region
-
+#aws_access_key = "YOUR_AWS_ACCESS_KEY"
+#aws_secret_key = "YOUR_AWS_SECRET_KEY"
+#aws_region     = "YOUR_AWS_REGION"
 
 
 # Linux Virtual Machine
-instance_count                    = 2
+instance_count                    = 1
 linux_instance_type               = "t2.micro"
 linux_associate_public_ip_address = true
 linux_root_volume_size            = 20
