@@ -8,10 +8,24 @@ app_environment = "dev"       # Dev, Test, Staging, Prod, etc
 vpc_cidr           = "10.11.0.0/16"
 public_subnet_cidr = "10.11.1.0/24"
 
-# AWS Settings
-aws_access_key = "Type your AWS Access Key"
-aws_secret_key = "Type your AWS Secret Key"
-aws_region     = "eu-west-1"
+# AWS Settings 
+
+# Option 1:
+# You can use this section if you have export env varibles 
+# to your profile using ~/.bashrc file
+# You need to five these varibles:
+# export TF_VAR_aws_access_key="YOUR_AWS_ACCESS_KEY"
+# export TF_VAR_aws_secret_key="YOUR_AWS_SECRET_KEY"
+# export TF_VAR_aws_region="YOUR_AWS_REGION"
+
+# Option 2:
+# Edit lines 24-26 with your AWS credentionals
+
+aws_access_key = var.aws_access_key
+aws_secret_key = var.aws_secret_key
+aws_region     = var.aws_region
+
+
 
 # Linux Virtual Machine
 instance_count                    = 2
