@@ -1,6 +1,6 @@
 
 task3-Python/Modules/*
 task1-Terrafom/.terraform/*
-*.tfstate
-*.backup
-*.pem
+task1-Terrafom/*.tfstate
+task1-Terrafom/*.backup
+task1-Terrafom/*.pem
