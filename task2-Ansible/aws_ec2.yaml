@@ -1,5 +1,10 @@
 ---
 plugin: aws_ec2
-aws_access_key: "***Insert your aws access ID here***"
-aws_secret_key: "***Insert your aws access secret key here***"
+
+# You must configure aws credentionals in your terminal in ~/.aws/credentials
+# [aws_profile]
+# aws_access_key_id = YOUR AWS ACCESS KEY ID
+# aws_secret_access_key = YOUR AWS SECRET ACCESS KEY
+
+boto_profile: aws_profile
 tag:Environment: dev
