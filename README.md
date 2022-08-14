@@ -1,14 +1,14 @@
 # Build AWS Deploy Labs Task
 
 1.	Terraform:
-    Create terraform deployment which does the following:
-    •	creates 2 EC2 instances in AWS (most small size) (based on any Centos image)
-    •	each node should has 2 external disks 1Gb each
-    •	external disks must be mounted to /data & /data1 directories (persistent over the reboot)
-    •	instance must be accessible from Internet
-    •	applies elastic IP to every node 
-    •	create user 'dev'
-    •	allow SSH connection to user 'dev' using your SSH key
+    Create terraform deployment which does the following:__
+    •	creates 2 EC2 instances in AWS (most small size) (based on any Centos image)__
+    •	each node should has 2 external disks 1Gb each__
+    •	external disks must be mounted to /data & /data1 directories (persistent over the reboot)__
+    •	instance must be accessible from Internet__
+    •	applies elastic IP to every node __
+    •	create user 'dev'__
+    •	allow SSH connection to user 'dev' using your SSH key__
 
 2.	Ansible:
   Write an Ansible playbook which does the following over 2 hosts from the previous task:
