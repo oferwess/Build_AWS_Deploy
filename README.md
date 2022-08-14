@@ -13,15 +13,15 @@
 2.	Ansible:
      Write an Ansible playbook which does the following over 2 hosts from the previous task: <br />
     •	installs 3 packages: <br />
-  	    chrome <br />
-        bzip2 <br />
-        perl <br />
+  	        chrome <br />
+            bzip2 <br />
+            perl <br />
     •	start chrome application <br />
     •	downloads tgz file from http://www.sbeams.org/sample_data/Microarray/External_test_data.tar.gz and open it to /var/tmp directory <br />
     •	add the following entries to /etc/hosts file (create backup before the changes): <br />
-        1.2.3.4 host1 <br />
-        3.4.2.1 host2 <br />
-        5.6.3.2 host3 <br />
+            1.2.3.4 host1 <br />
+            3.4.2.1 host2 <br />
+            5.6.3.2 host3 <br />
 
 3.	Scripting: 
   Write a python script for taking AWS EBS snapshots on EC2 instance external disk (see the task #1) <br />
