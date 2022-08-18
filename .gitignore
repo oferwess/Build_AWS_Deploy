@@ -4,3 +4,9 @@ task1-Terrafom/.terraform/*
 task1-Terrafom/*.tfstate
 task1-Terrafom/*.backup
 task1-Terrafom/*.pem
+task1-Terrafom/terraform.tfstate
+task1-Terrafom/terraform.tfstate.backup
+task2-Ansible/terraform.tfstate
+task1-Terrafom/terraform.tfstate
+task1-Terrafom/terraform.tfstate.backup
+task2-Ansible/terraform.tfstate

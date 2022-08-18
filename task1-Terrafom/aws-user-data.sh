@@ -9,6 +9,17 @@ adduser dev
 #chmod 600 .ssh/authorized_keys
 
 #Use shell script to realize partition, formatting and mounting data disks
+
+# Install docker
+#sudo yum install -y yum-utils
+#sudo yum-config-manager \
+#    --add-repo \
+#    https://download.docker.com/linux/centos/docker-ce.repo
+#sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+#sudo usermod -aG docker centos
+#sudo systemctl enable docker.service
+#sudo systemctl start docker.service
+
 for V in $(ls /dev/xvd[b-z])
 do
  echo -e "n\np\n\n\n\nw\n" |fdisk $V
