@@ -10,3 +10,4 @@ task2-Ansible/terraform.tfstate
 task1-Terrafom/terraform.tfstate
 task1-Terrafom/terraform.tfstate.backup
 task2-Ansible/terraform.tfstate
+task4-k8s/
